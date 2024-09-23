@@ -6,12 +6,13 @@ namespace PaintCraft.Demo.ColoringBook
 {
     public class LoadSceneButtonController : MonoBehaviour
     {
+        [SerializeField] string NameScene = "PageSelect";
         private void Start()
         {
             GetComponent<Button>().onClick.AddListener(
                 () =>
                 {
-                    SceneManager.LoadScene("PageSelect");
+                    SceneManager.LoadScene(NameScene);
                 });
         }
     }
