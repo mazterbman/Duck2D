@@ -1039,6 +1039,7 @@ GameObject:
   - component: {fileID: 1877224099}
   - component: {fileID: 1877224096}
   - component: {fileID: 1877224095}
+  - component: {fileID: 1877224100}
   m_Layer: 5
   m_Name: Character2
   m_TagString: Untagged
@@ -1077,7 +1078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd32079ded4ddb54ab3f8c3952071066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageScriptableObject: {fileID: 11400000, guid: e59ce4e2f9d3d48df84d43163bebd474,
+  pageScriptableObject: {fileID: 11400000, guid: 636db0789b49cee4ea9d0817563bbc07,
     type: 2}
   SceneName: ColoringOnePage
   firstStart: 1
@@ -1124,7 +1125,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1877224099}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1877224100}
+        m_TargetAssemblyTypeName: ButtonControll, Assembly-CSharp
+        m_MethodName: savePreff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1877224098
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1153,13 +1166,33 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 98649c6563010f04f8e59c028bb91c5c, type: 3}
+  m_Texture: {fileID: 2800000, guid: d81531dc3d102344fad58c5803f2bdbd, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
+--- !u!114 &1877224100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877224093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a012d1481ab91654a933a0a0e3c51546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainMenuPanel: {fileID: 0}
+  ChoosenCharactersPanel: {fileID: 0}
+  sysButtonCh: 0
+  children: 1
+  nameScene: MainMenuDuck2D
+  sysButton: 0
+  nameForPreff: CharacterSelected
+  indexButton: 1
 --- !u!1 &1961531435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1206,7 @@ GameObject:
   - component: {fileID: 1961531441}
   - component: {fileID: 1961531438}
   - component: {fileID: 1961531437}
+  - component: {fileID: 1961531442}
   m_Layer: 5
   m_Name: Character1
   m_TagString: Untagged
@@ -1211,7 +1245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd32079ded4ddb54ab3f8c3952071066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageScriptableObject: {fileID: 11400000, guid: eb0313d04f2f94660acf6454efb99216,
+  pageScriptableObject: {fileID: 11400000, guid: c6ab9589d8460fb459111f7144e07031,
     type: 2}
   SceneName: ColoringOnePage
   firstStart: 1
@@ -1258,7 +1292,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1961531441}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1961531442}
+        m_TargetAssemblyTypeName: ButtonControll, Assembly-CSharp
+        m_MethodName: savePreff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1961531440
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1287,13 +1333,33 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 2f195cda4c2c23644811866aee55a093, type: 3}
+  m_Texture: {fileID: 2800000, guid: f7915d7b57ea2734583fea9a99e4fb4b, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
+--- !u!114 &1961531442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961531435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a012d1481ab91654a933a0a0e3c51546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainMenuPanel: {fileID: 0}
+  ChoosenCharactersPanel: {fileID: 0}
+  sysButtonCh: 0
+  children: 1
+  nameScene: MainMenuDuck2D
+  sysButton: 0
+  nameForPreff: CharacterSelected
+  indexButton: 0
 --- !u!1 &1978529483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,6 +1396,7 @@ MonoBehaviour:
   nameForPreff: Timer
   valueFromPreff: 0
   defaultValue: 60
+  TMPVal: 0
   nameScene: MainMenuDuck2D
   sysButton: 1
 --- !u!4 &1978529485
@@ -1360,6 +1427,7 @@ GameObject:
   - component: {fileID: 1989179474}
   - component: {fileID: 1989179471}
   - component: {fileID: 1989179470}
+  - component: {fileID: 1989179475}
   m_Layer: 5
   m_Name: Character3
   m_TagString: Untagged
@@ -1398,7 +1466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd32079ded4ddb54ab3f8c3952071066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageScriptableObject: {fileID: 11400000, guid: 1f0e625511e694b7a8fa431439310e98,
+  pageScriptableObject: {fileID: 11400000, guid: 120415f6f3b0e894d81ed39e8494f738,
     type: 2}
   SceneName: ColoringOnePage
   firstStart: 1
@@ -1445,7 +1513,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1989179474}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1989179475}
+        m_TargetAssemblyTypeName: ButtonControll, Assembly-CSharp
+        m_MethodName: savePreff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1989179473
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1474,13 +1554,33 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 4a59de5706b8234409490268a034b2ac, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6e53725102470b64ebd5761b8ed6de8c, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
+--- !u!114 &1989179475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989179468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a012d1481ab91654a933a0a0e3c51546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainMenuPanel: {fileID: 0}
+  ChoosenCharactersPanel: {fileID: 0}
+  sysButtonCh: 0
+  children: 1
+  nameScene: MainMenuDuck2D
+  sysButton: 0
+  nameForPreff: CharacterSelected
+  indexButton: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
