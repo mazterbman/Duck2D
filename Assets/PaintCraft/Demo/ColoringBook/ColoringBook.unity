@@ -14994,6 +14994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46b7bb68f09880943b05bafd2b33a237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NameScene: PageSelect
 --- !u!114 &1849940122
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -343,6 +343,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageScriptableObject: {fileID: 11400000, guid: b0b44b26a5e48415388b13860fa3479c,
     type: 2}
+  SceneName: ColoringBook
+  firstStart: 1
 --- !u!114 &534419213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,6 +876,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageScriptableObject: {fileID: 11400000, guid: 4f17ccd1fbe1845b7b003c508e1bd037,
     type: 2}
+  SceneName: ColoringBook
+  firstStart: 1
 --- !u!114 &1299214058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1071,6 +1075,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageScriptableObject: {fileID: 11400000, guid: d6316078435c54ce6b0cc7c2f2ac8d24,
     type: 2}
+  SceneName: ColoringBook
+  firstStart: 1
 --- !u!114 &1339531639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1387,6 +1393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageScriptableObject: {fileID: 11400000, guid: c8ebc9cca20dc4db5be983e42e0cda9a,
     type: 2}
+  SceneName: ColoringBook
+  firstStart: 1
 --- !u!114 &1726147018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,6 +1527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageScriptableObject: {fileID: 11400000, guid: 02c0b146502ae48778bccaaf6e94c95d,
     type: 2}
+  SceneName: ColoringBook
+  firstStart: 1
 --- !u!114 &1766284780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1632,6 +1642,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageScriptableObject: {fileID: 11400000, guid: 1f0e625511e694b7a8fa431439310e98,
     type: 2}
+  SceneName: ColoringBook
+  firstStart: 1
 --- !u!114 &1781898799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1783,6 +1795,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageScriptableObject: {fileID: 11400000, guid: 202d09451bf4e4546b465678d8a0d2e5,
     type: 2}
+  SceneName: ColoringBook
+  firstStart: 1
 --- !u!114 &1844725700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1915,6 +1929,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageScriptableObject: {fileID: 11400000, guid: 95bf8e7f392654f55bbf08dab0cb3d53,
     type: 2}
+  SceneName: ColoringBook
+  firstStart: 1
 --- !u!114 &1953227113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2047,6 +2063,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageScriptableObject: {fileID: 11400000, guid: eb0313d04f2f94660acf6454efb99216,
     type: 2}
+  SceneName: ColoringBook
+  firstStart: 1
 --- !u!114 &2048678975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2179,6 +2197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageScriptableObject: {fileID: 11400000, guid: e59ce4e2f9d3d48df84d43163bebd474,
     type: 2}
+  SceneName: ColoringBook
+  firstStart: 1
 --- !u!114 &2123102866
 MonoBehaviour:
   m_ObjectHideFlags: 0

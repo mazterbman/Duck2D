@@ -20,7 +20,7 @@ public class ButtonControll : UIManager
     public void savePreff()
     {
         PlayerPrefs.SetInt(nameForPreff, indexButton);
-        Debug.Log("PlayerPrefSaved");
+        Debug.Log($"PlayerPrefSaved  =  {indexButton}");
     }
 
 }
