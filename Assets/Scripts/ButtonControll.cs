@@ -9,6 +9,9 @@ public class ButtonControll : UIManager
     [SerializeField] SysButton sysButton;
 
     [Space]
+    [SerializeField] string SceneName = "ColoringBook";
+
+    [Space]
     [SerializeField] string nameForPreff = "CharacterSelected";
     [SerializeField] int indexButton;
     public void OnClk()
@@ -21,6 +24,11 @@ public class ButtonControll : UIManager
     {
         PlayerPrefs.SetInt(nameForPreff, indexButton);
         Debug.Log($"PlayerPrefSaved  =  {indexButton}");
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(SceneName);
     }
 
 }

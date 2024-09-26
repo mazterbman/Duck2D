@@ -14,7 +14,6 @@ namespace PaintCraft.Demo.ColoringBook
         private IPageConfig pageConfig;
 
         [Space]
-        [SerializeField] string SceneName = "ColoringBook";
         [SerializeField] bool firstStart = true;
         private Button button;
 
@@ -45,7 +44,8 @@ namespace PaintCraft.Demo.ColoringBook
         private void OnButtonClick()
         {
             AppData.SelectedPageConfig = pageConfig;
-            SceneManager.LoadScene(SceneName);
         }
+
+
     }
 }

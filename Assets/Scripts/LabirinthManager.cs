@@ -1,11 +1,14 @@
 using System.IO;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
+using static PlayerControll;
 
 public class LabirinthManager : MonoBehaviour
 {
     [SerializeField] GameObject charactersParent;
     [SerializeField] GameObject character;
+    [SerializeField] PlayerControll playerControll;
     [SerializeField] int indexCharacter;
 
     [Space]
@@ -15,6 +18,9 @@ public class LabirinthManager : MonoBehaviour
     [Space]
     [SerializeField] Transform pointStart;
     [SerializeField] Transform pointEnd;
+
+    [Space]
+    [SerializeField] bool canClk = true;
 
     private void Start()
     {
@@ -47,8 +53,42 @@ public class LabirinthManager : MonoBehaviour
 
         character = charactersParent.transform.GetChild(index).gameObject;
         character.transform.position = pointStart.position;
+        playerControll = character.GetComponent<PlayerControll>();
         setTextureOnMaterial();
 
         character.SetActive(true);
+    }
+
+
+    public void MoveUp()
+    {
+        MoveCharacter(KindMove.Up);
+    }
+    public void MoveDown()
+    {
+        MoveCharacter(KindMove.Down);
+    }
+    public void MoveLeft()
+    {
+        MoveCharacter(KindMove.Left);
+    }
+    public void MoveRight()
+    {
+        MoveCharacter(KindMove.Right);
+    }
+    void MoveCharacter(KindMove kindMove)
+    {
+        if (!canClk) return;
+
+        playerControll.kindMove = kindMove;
+        canClk = false;
+    }
+
+    public void StopCharacter()
+    {
+        if (canClk) return;
+        canClk = true;
+
+        playerControll.kindMove = KindMove.Stay;
     }
 }
