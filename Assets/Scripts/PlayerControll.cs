@@ -54,10 +54,13 @@ public class PlayerControll : MonoBehaviour
         switch (kindCharacter)
         {
             case KindCharacter.Chibick:
+                //GetComponent<Rigidbody>().Move(new Vector3(Time.deltaTime * moveSpeed * -1, 0, 0), Quaternion.identity);
+                //GetComponent<Rigidbody>().AddForce(new Vector3(moveSpeed * -1, 0, 0),ForceMode.Force);
                 transform.Translate(Time.deltaTime * moveSpeed * -1, 0, 0);
                 break;
 
             case KindCharacter.Goose:
+                //GetComponent<Rigidbody>().Move(new Vector3(Time.deltaTime * moveSpeed, 0, 0), Quaternion.identity);
                 transform.Translate(Time.deltaTime * moveSpeed, 0, 0);
                 break;
         }
@@ -73,10 +76,12 @@ public class PlayerControll : MonoBehaviour
         switch (kindCharacter)
         {
             case KindCharacter.Chibick:
+                //GetComponent<Rigidbody>().Move(new Vector3(Time.deltaTime * moveSpeed, 0, 0), Quaternion.identity);
                 transform.Translate(Time.deltaTime * moveSpeed, 0, 0);
                 break;
 
             case KindCharacter.Goose:
+                //GetComponent<Rigidbody>().Move(new Vector3(Time.deltaTime * moveSpeed * -1, 0, 0), Quaternion.identity);
                 transform.Translate(Time.deltaTime * moveSpeed * -1, 0, 0);
 
                 break;
@@ -89,10 +94,13 @@ public class PlayerControll : MonoBehaviour
         switch (kindCharacter)
         {
             case KindCharacter.Chibick:
+                //GetComponent<Rigidbody>().AddForce(new Vector3(0, 0,moveSpeed * -1), ForceMode.Force);
+                //GetComponent<Rigidbody>().Move(new Vector3(0, 0, Time.deltaTime * moveSpeed * -1), Quaternion.identity);
                 transform.Translate(0, 0, Time.deltaTime * moveSpeed * -1);
                 break;
 
             case KindCharacter.Goose:
+                //GetComponent<Rigidbody>().Move(new Vector3(0, 0, Time.deltaTime * moveSpeed), Quaternion.identity);
                 transform.Translate(0, Time.deltaTime * moveSpeed, 0);
                 break;
         }
@@ -105,10 +113,13 @@ public class PlayerControll : MonoBehaviour
         switch (kindCharacter)
         {
             case KindCharacter.Chibick:
+                //GetComponent<Rigidbody>().AddForce(new Vector3(0, 0,moveSpeed), ForceMode.Force);
+                //GetComponent<Rigidbody>().Move(new Vector3(0, 0, Time.deltaTime * moveSpeed), Quaternion.identity);
                 transform.Translate(0, 0, Time.deltaTime * moveSpeed);
                 break;
 
             case KindCharacter.Goose:
+                //GetComponent<Rigidbody>().Move(new Vector3(0, Time.deltaTime * moveSpeed * -1, 0), Quaternion.identity);
                 transform.Translate(0, Time.deltaTime * moveSpeed * -1, 0);
                 break;
         }

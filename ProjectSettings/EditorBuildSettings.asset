@@ -50,5 +50,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Duck2D/ColoringOnePage.unity
     guid: ba11e52e174957b44956d06970e9df19
+  - enabled: 1
+    path: Assets/Scenes/Duck2D/Labyrinth.unity
+    guid: 0347351facd5e8447ad8d6df528eaeaa
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
