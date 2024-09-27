@@ -12,6 +12,9 @@ public class EndGame : MonoBehaviour
     [SerializeField] string SceneName = "MainMenuDuck2D";
     [SerializeField, Range(0, 5f)] float delay;
 
+    [Space]
+    [SerializeField] LabirinthManager labirinthManager;
+
     private void Awake()
     {
         FireWork.SetActive(false);
@@ -24,6 +27,7 @@ public class EndGame : MonoBehaviour
             Debug.Log("EndGame");
             FireWork.SetActive(true);
             BlockClk.SetActive(true);
+            labirinthManager.ENDGame = true;
             StartCoroutine(nextSceneDelay());
         }
     }
